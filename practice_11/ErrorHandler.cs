@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace practice_11.Enum
+namespace practice_11
 {
-    public enum Vacancies
+    public abstract class ErrorHandler
     {
-        Manager,
-        Developer,
-        Designer,
-        Other
+        public abstract void HandleError(Exception ex);
     }
 }
